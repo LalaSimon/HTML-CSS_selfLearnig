@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::selection {
+            background-color: orange;
+        }
+        article::first-letter {
+            font-weight: bold;
+        }
+        article::first-line {
+            text-decoration: underline;
+        }
+        article::before {
+            content: "@";
+            border: 2px dotted red;
+        }
+        article:last-child::after{
+            content:"HOT";
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, excepturi pariatur at quas, similique ab quibusdam quidem beatae numquam eligendi porro rerum, molestias consequuntur animi eius vel enim? Reiciendis, qui?</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, excepturi pariatur at quas, similique ab quibusdam quidem beatae numquam eligendi porro rerum, molestias consequuntur animi eius vel enim? Reiciendis, qui?</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, excepturi pariatur at quas, similique ab quibusdam quidem beatae numquam eligendi porro rerum, molestias consequuntur animi eius vel enim? Reiciendis, qui?</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, excepturi pariatur at quas, similique ab quibusdam quidem beatae numquam eligendi porro rerum, molestias consequuntur animi eius vel enim? Reiciendis, qui?</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, excepturi pariatur at quas, similique ab quibusdam quidem beatae numquam eligendi porro rerum, molestias consequuntur animi eius vel enim? Reiciendis, qui?</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, excepturi pariatur at quas, similique ab quibusdam quidem beatae numquam eligendi porro rerum, molestias consequuntur animi eius vel enim? Reiciendis, qui?</article>
+    </div>
+</body>
+</html>

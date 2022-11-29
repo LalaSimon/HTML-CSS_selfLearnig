@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="new_article.php" method="post">
+    <p>
+      <label for="title">Tytuł artykułu:</label>
+      <input type="title" name="title" id="title">
+    </p>
+    <p>
+      <label for="content">Treść artykułu:</label><br>
+     <textarea id="content" name="conent" rows="4" cols="50"></textarea>
+    </p>
+    <p>
+      <label for="publication-date">Data publikacji:</label>
+     <input type="datetime-local" id="publication-date" name="publication-date">
+    </p>
+    <p>
+      Typ publikacji:<br>
+      <input type="radio" name="Publication-type" value="News" id="News" >
+      <label for="News">News</label><br>
+      <input type="radio" name="Publication-type" value="Article" id="Article">
+      <label for="Article">Artykuł</label><br>
+      <input type="radio" name="Publication-type" value="Review" id="Review" >
+      <label for="Review">Recenzja</label><br>
+    </p>
+    
+    <p>
+      Hobby:</br>
+      <label for="Trips">Podróże</label>
+     <input type="checkbox" id="Trips" name="Trips"><br>
+     <label for="Lifestyle">Lifestyle</label>
+     <input type="checkbox" id="Lifestyle" name="Lifestyle"><br>
+    </p>
+    <p>
+      <label for="category">Kategorie:</label>
+      <select name="category" id="category">
+        <option value="Kategoria 1">Kategoria 1</option>
+        <option value="Kategoria 2">Kategoria 2</option>
+      </select>
+    </p>
+    <p>
+      <button type="reset">Resetuj</button>
+      <button type="submit">Wyślij</button>
+    </p> 
+</form>
+</body>
+</html>

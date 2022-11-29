@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            border: 2px solid red;
+        }
+        .left{
+            float: left;
+            margin: 5px;
+        }
+        .right{
+            float: right;
+            margin: 5px;
+        }
+        span{
+            float: left;
+            background-color: lightgray;
+            margin: 5px;
+            padding: 5px;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        article, aside{
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .left-column{
+            width: 75%;
+            height: 300px;
+            float: left;
+            background-color: lightgreen;
+        }
+        .sidebar{
+            width: 25%;
+            height: 300px;
+            float: left;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <header class="header clearfix">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        <img class="right" width="100px" src="https://cdn.pixabay.com/photo/2018/03/26/23/07/dropshipping-3264486__480.jpg" alt="">
+        Aperiam ipsam molestiae voluptatibus eum perspiciatis incidunt unde modi, laboriosam enim deserunt consequatur repudiandae nesciunt asperiores quis perferendis commodi suscipit beatae pariatur deleniti! Reiciendis eius assumenda illum inventore voluptatum id, sed nobis vel est architecto recusandae, aliquam officia ad voluptatibus vitae similique!
+        <span>Lorem, ipsum1.</span>
+        <span>Lorem, ipsum2.</span>
+        <span>Lorem, ipsum3.</span>
+        <span>Lorem, ipsum4.</span>
+    </header>
+    <article class="left-column">
+        article
+    </article>
+    <aside class="sidebar">
+        aside
+    </aside>
+</body>
+</html>
